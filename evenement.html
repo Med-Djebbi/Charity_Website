@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Formulaire de participation à l'événement de don</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #041c36;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #041c36;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .form-group input[type="text"],
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group select {
+      height: 35px;
+    }
+
+    .form-group .role-description {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .form-group .arrival-time {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group .arrival-time label {
+      margin-right: 10px;
+    }
+
+    .form-group .arrival-time input[type="time"] {
+      padding: 5px;
+    }
+
+    .form-group .arrival-time input[type="time"]::-webkit-inner-spin-button,
+    .form-group .arrival-time input[type="time"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+  
+    h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+
+}
+.role-description {
+ 
+  color: #ffffff;
+
+}
+.form-group input[type="submit"] {
+  background-color: #F8080C;
+  color: #ffffff;
+  cursor: pointer;
+  width : 20%;
+  border-radius: 5px;
+  padding: 8px;
+
+}
+.form-group input[type="submit"]:hover {
+  background-color:#F8080C;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulaire de participation</h2>
+    <form name="evenement" method="post" action="PHP/evenement.php">
+      <div class="form-group">
+        <label for="name">Nom et prénom :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="evenement">Nom de l'événement:</label>
+        <select id="evenement" name="evenement" required>
+          <option value="">Sélectionner un événement</option>
+          <option value="Projet d'amélioration de l'éducation">Projet d'amélioration de l'éducation</option>
+          <option value="Projet de développement économique ">Projet de développement économique </option>
+          <option value="Projet de développement communautaire">Projet de développement communautaire</option>
+          <option value="Projet de protection de l'enfance">Projet de protection de l'enfance</option>
+        </select>
+      
+      </div>
+      <div class="form-group">
+        <label for="role">Rôle :</label>
+        <select id="role" name="role" required>
+          <option value="">Sélectionner un rôle</option>
+          <option value="bénévole">Bénévole</option>
+          <option value="donateur">Donateur</option>
+          <option value="organisateur">Organisateur</option>
+        </select>
+        <div class="role-description">
+          <p><strong>Bénévole :</strong> Aide à l'organisation de l'événement et à l'accompagnement des enfants.</p>
+          <p><strong>Donateur :</strong> Contribue financièrement ou en nature aux besoins des enfants.</p>
+          <p><strong>Organisateur :</strong> Responsable de la planification et de l'organisation de l'événement.</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="arrival-time">
+          <label for="arrival-time">Heure d'arrivée :</label>
+          <input type="time" id="arrival-time" name="arrival-time" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="envoyer" style="color: #ffffff ;">
+        
+      </div>
+    
+    </form>
+  </div>
+</body>
+</html>

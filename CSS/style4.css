@@ -1,0 +1,62 @@
+.form_connex{
+    clear: both;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    height: 450px;
+}
+.form_connex form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    width: 29%;
+    font-size: 18px;
+    gap: 1.5em;
+}
+.form_connex form h4{
+    text-align: center;
+    font-size: 30px;
+}
+.form_connex form hr{
+    margin: 10px 0;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+.login_field{
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    gap: 1em;
+}
+.form_connex input{
+    margin-bottom: 2px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, .4);
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.form_connex input[type="submit"]{
+    width: 150px;
+    height: 45px;
+    border-radius: 2px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-top: 15px;
+    border: none;
+    background-image: linear-gradient(#ff0004ef , #3b3b3b);
+    color: white;
+}
+.form_connex input[type="submit"]:hover{
+    color: black;
+    background-image: linear-gradient(#ff8183 , #3b3b3b);
+    font-weight: 500;
+}

@@ -1,0 +1,308 @@
+.page_title1{
+    clear: both;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 150px;
+}
+.header1{
+    min-height: 1140px;
+    background: url("../Images/1.jpg");
+    background-attachment: fixed;
+    color: white;
+}
+.mission{
+    min-height: 950px;
+    background-color: #132A38;
+    color: white;
+    display: flex;
+    gap: 3em;
+    padding-top: 90px;
+}
+.mission1{
+    min-height: 1150px;
+    background-color: #132A38;
+    color: white;
+    display: flex;
+    gap: 3em;
+    padding-top: 90px;
+}
+.miss_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 60px;
+    font-size: 17px;
+}
+.mission p span{
+    font-size: 40px;
+}
+.mission1 p span{
+    font-size: 40px;
+}
+.miss_flex span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.donation_box1{
+    width: 165px;
+    height: 41px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(#ff0004ef , #3b3b3b);
+    color: white;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.donation_box1:hover{
+    color: black;
+    background-image: linear-gradient(#ff8183 , #3b3b3b);
+    font-weight: 500;
+}
+.donation_box1 a{
+    text-decoration: none;
+}
+.bilan{
+    min-height: 770px;
+    background-color: #132A38;
+    color: whitesmoke
+}
+.flexbox1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 130px;
+    width: 90%;
+    height: 530px;
+    gap: 2em;
+    padding-left: 72px;
+}
+.item1{
+    background: url("../Images/item1.PNG") no-repeat ;
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+}
+.item2{
+    background: url("../Images/item2.jpg") no-repeat;
+    width: 35%;
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background: url("../Images/item3.PNG") no-repeat;
+    width: 35%;
+    background-size: cover;
+    background-position: right;
+}
+#couleur{
+    background: rgba(124, 7, 7, 0.4);
+    height: 100%;
+    width: 100%;
+}
+#couleur1{
+    background: rgba(0, 0, 0, 0.57);
+    height: 100%;
+    width: 100%;
+}
+.item_txt{
+    padding-top: 100px;
+    text-align: center;
+}
+.item_txt h2{
+    font-size: 30px;
+}
+.item_txt p{
+    font-size: 17px;
+}
+.item_txt p:nth-child(2){
+    cursor: pointer;
+}
+.statistique{
+    min-height: 580px;
+    background-color: #132A38;
+}
+.stat_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.stat_container .stat_box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+.stat_container .stat_box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 120px;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+.stat_container .stat_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 120px;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+    transition: 0.5s;
+}
+.stat_container .stat_box:hover::before,
+.stat_container .stat_box:hover::after{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.stat_container .stat_box:nth-child(1)::before,
+.stat_container .stat_box:nth-child(1)::after{
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+.stat_container .stat_box:nth-child(2)::before,
+.stat_container .stat_box:nth-child(2)::after{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.stat_container .stat_box:nth-child(3)::before,
+.stat_container .stat_box:nth-child(3)::after{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+.stat_container .stat_box span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+.stat_container .stat_box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.stat_container .stat_box:hover span::before
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.stat_container .stat_box span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation-delay: -1s;
+}
+.stat_container .stat_box:hover span::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translate(10px);
+    }
+    50%
+    {
+        transform: translate(-10px);
+    }
+}
+.stat_container .stat_box .stat_content{
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: 0.5s;
+    color: white;
+}
+.stat_container .stat_box:hover .stat_content{
+    left: -25px;
+    padding: 60px 40px;
+}
+.stat_container .stat_box .stat_content strong{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+.stat_container .stat_box .stat_content p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+.quote{
+    min-height: 800px;
+    background: url("../Images/sos1.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.quote_txt{
+    text-align: center;
+    padding-top: 20px;
+}
+.quote_txt p:nth-child(1){
+    font-size: 50px;
+}
+.quote_txt p:nth-child(2){
+    font-size: 30px;
+}
+.quote_box{
+    position: absolute;
+    width: 1000px;
+    height: 430px;
+    transform: skewX(-15deg);
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: 245px;
+    backdrop-filter: blur(10px);
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}

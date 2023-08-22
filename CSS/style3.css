@@ -1,0 +1,137 @@
+.page3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #041c36;
+}
+.form_inscri{
+    clear: both;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.form_inscri form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    width: 50%;
+    font-size: 18px;
+    gap: 1.5em;
+}
+.form_inscri form h4{
+    text-align: center;
+    font-size: 30px;
+}
+.form_inscri form hr{
+    margin: 10px 0;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+.name_field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name_field div{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+label{
+    margin-bottom: 4px;
+}
+
+.form_inscri input{
+    margin-bottom: 2px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+.form_inscri input:focus{
+    border: 1px solid #ff0004ef;
+}
+.form_inscri input[type="text"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.form_inscri input[type="email"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.form_inscri input[type="tel"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.form_inscri input[type="password"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.form_inscri input[type="submit"]{
+    width: 150px;
+    height: 45px;
+    border-radius: 2px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 30px;
+    border: none;
+    background-image: linear-gradient(#ff0004ef , #3b3b3b);
+    color: white;
+}
+.form_inscri input[type="submit"]:hover{
+    color: black;
+    background-image: linear-gradient(#ff8183 , #3b3b3b);
+    font-weight: 500;
+}
+.date_naiss{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2em;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.date_naiss div{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+}.date_naiss div select{
+    height: 25px;
+}
+.sexe{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2em;
+}
+.address_field{
+    display: flex;
+    gap: 1em;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.address_field input[name="code_postal"]{
+    width: 65px;
+}
+.address_field input[name="ville"]{
+    width: 110px;
+}
+.address_field input[name="adresse"]{
+    width: 220px;
+}
+.donnee{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <title>Formulaire de connexion</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="CSS/style1.css">
+  <link rel="stylesheet" href="CSS/style3.css">
+  <link rel="stylesheet" type="text/css" href="CSS/formulaire2.css">
+</head>
+<body class="page3" vlink="white" link="white" alink="white">
+  <div style="color: white;">
+  <div class="logo">
+      <a href="index.html"><img src="Images/logo.png" alt="logo" width="55px"></a>
+  </div>
+  <div class="title">
+      <a href="index.html"><h2>UN ENFANT,<br/> UN ESPOIR</h2></a>
+  </div>
+  <div class="menu">
+      <div class="flexbox_item"><a href="Qui_nous_sommes.html">QUI NOUS SOMMES</a></div>
+      <div class="flexbox_item"><a href="actions.html">ACTIONS</a></div>
+      <div class="flexbox_item"><a href="projets.html">PROJETS</a></div>
+      <div class="flexbox_item"><a href="evenement.html">EVENEMENT</a></div>
+      <div class="flexbox_item"><a href="PHP/connexion.php">SE CONNECTER</a></div>
+  </div>
+</div>
+  <div class="container">
+    <form name="paiement" method="post" action="PHP/paiement.php">
+        <div>
+        <h4>Paiement</h4>
+        <hr>
+        </div>
+        <div style="padding-top: 10px;">
+        <div class="form-group">
+        <label for="somme">Somme du don :</label>
+        <input type="text" id="somme" name="somme" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nom">Nom de propriétaire  :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="numcarte">Numero de carte :
+        <img src="Images/cards.png" alt="cards" width="220px"></label>
+        <input type="number" id="numcarte" name="numcarte" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date d'expiration :</label>
+        <input type="date" id="date" name="date" required>
+        
+      </div>
+       <div class="form-group">
+         <label for="code_securite">Code sécurité :</label>
+        <input type="number" id="code_securite" name="code_securite" required>
+      </div>
+       <div class="form-group">
+        <label for="code_postal">Zip/Code postal:</label>
+        <input type="number" id="code_postal" name="code_postal" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="payer" style="color: #ffffff ;">
+        
+      </div>
+    </div>
+    </form>
+  </div>
+</body>
+</html>

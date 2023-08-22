@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <title>Inscription</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS/style1.css">
+        <link rel="stylesheet" href="CSS/style3.css">
+    </head>
+    <script language="javascript">
+        function verifMotPass(x,y){
+            motdepasse1=document.getElementById(x).value;
+            motdepasse2=document.getElementById(y).value;
+            if(motdepasse1 != motdepasse2)
+            {
+                alert("Les deux mots de passe que vous venez de saisir sont différents");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+    <body class="page3" vlink="white" link="white" alink="white">
+        <div style="color: white;">
+        <div class="logo">
+            <a href="index.html"><img src="Images/logo.png" alt="logo" width="55px"></a>
+        </div>
+        <div class="title">
+            <a href="index.html"><h2>UN ENFANT,<br/> UN ESPOIR</h2></a>
+        </div>
+        <div class="menu">
+            <div class="flexbox_item"><a href="Qui_nous_sommes.html">QUI NOUS SOMMES</a></div>
+            <div class="flexbox_item"><a href="actions.html">ACTIONS</a></div>
+            <div class="flexbox_item"><a href="projets.html">PROJETS</a></div>
+            <div class="flexbox_item"><a href="evenement.html">EVENEMENT</a></div>
+            <div class="flexbox_item"><a href="PHP/connexion.php">SE CONNECTER</a></div>
+        </div>
+    </div>
+        <div class="form_inscri">
+            <form name="inscription" method="post" action="PHP/inscription.php" onsubmit="return verifMotPass('password','confirmation');">
+                <div><h4>Inscription</h4>
+                <hr>
+                </div>
+                <div class="name_field">
+                    <div>
+                        <label for="nom"><strong>Nom de famille</strong></label>
+                        <input type="text" name="nom" id="nom" required>
+                    </div>
+                    <div>
+                        <label for="prenom"><strong>Prénom</strong></label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </div>
+                </div>
+                <div class="sexe">
+                    <div><label for="sexe"><strong>Sexe</strong></label></div>
+                    <div style="font-size: 16px;">
+                        <input type="radio" name="sexe" value="homme">Homme
+                        <input type="radio" name="sexe" value="femme">Femme
+                    </div>
+                </div>
+                <div>
+                    <label for="date_naiss"><strong>Date de naissance</strong></label>
+                    <input type="date" name="date_naiss" id="date_naiss" required>
+                </div>
+            <div>
+                <label><strong>Adresse</strong></label>
+                <div class="address_field">
+                    <div>
+                    <label for="adresse">Adresse exacte</label>
+                    <input type="text" name="adresse" id="adresse" required>
+                    </div>
+                    <div>
+                    <label for="ville">Ville</label>
+                    <input type="text" name="ville" id="ville" required>
+                    </div>
+                    <div>
+                    <label for="code_postal">Code Postal</label>
+                    <input type="text" name="code_postal" id="code_postal" required>
+                    </div>
+                </div>
+                </div>
+                <div class="donnee">
+                <label for="entreprise"><strong>Entreprise</strong></label>
+                <input type="text" name="entreprise" id="entreprise">
+                </div>
+                <div class="donnee">
+                <label for="telephone"><strong>N° de Téléphone</strong></label>
+                <input type="tel" name="telephone" id="telephone" required>
+                </div>
+                <div class="donnee">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+                </div>
+                <div class="name_field">
+                    <div>
+                    <label for="password"><strong>Mot de passe</strong></label>
+                    <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                    <label for="confirmation"><strong>Confirmation</strong></label>
+                    <input type="password" name="confirmation" id="confirmation" required>
+                    </div>
+                </div>
+                <input type="submit" name="valider" value="Valider">
+            </form>
+        </div>
+    </body>
+</html>
